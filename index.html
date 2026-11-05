@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="hi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
@@ -119,7 +120,6 @@
     <div class="grid lg:grid-cols-12 gap-12 items-center">
       
       <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-        <!-- Badge -->
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-semibold">
           <i data-lucide="trophy" class="w-4 h-4"></i>
           <span>Aligarh's #1 Grassroots Running Revolution</span>
@@ -241,7 +241,7 @@
     </div>
   </section>
 
-  <!-- Community Run Details & Pace Groups -->
+  <!-- Community Run Details -->
   <section id="details" class="py-16 bg-slate-900/60 border-y border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -252,8 +252,6 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        
-        <!-- Box 1 -->
         <div class="bg-brand-card border border-slate-800 rounded-3xl p-6 hover:border-emerald-500/40 transition">
           <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
             <i data-lucide="clock-4" class="w-6 h-6"></i>
@@ -268,7 +266,6 @@
           </div>
         </div>
 
-        <!-- Box 2 -->
         <div class="bg-brand-card border border-emerald-500/50 rounded-3xl p-6 hover:border-emerald-400 transition relative">
           <div class="absolute -top-3 right-5 bg-emerald-500 text-black text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
             The Main Run
@@ -286,7 +283,6 @@
           </div>
         </div>
 
-        <!-- Box 3 -->
         <div class="bg-brand-card border border-slate-800 rounded-3xl p-6 hover:border-emerald-500/40 transition">
           <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
             <i data-lucide="repeat" class="w-6 h-6"></i>
@@ -294,16 +290,14 @@
           <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Step 3 • Route Briefing</span>
           <h4 class="text-xl font-bold text-white mt-1 mb-2">5K Circle Circuit</h4>
           <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Rannning root ek smooth circle hoga. Pura circuit run shuru hone se theek pehle Habitat Centre par sabhi ko explain kiya jayega.
+            Running root ek smooth circle hoga. Pura circuit run shuru hone se theek pehle Habitat Centre par sabhi ko explain kiya jayega.
           </p>
           <div class="text-xs text-slate-300 font-semibold bg-slate-900 px-3 py-2 rounded-xl border border-slate-800">
             Route: Spot Par Hi Bataya Jayega
           </div>
         </div>
-
       </div>
 
-      <!-- Essential Rules Bar -->
       <div class="mt-12 bg-slate-900/90 border border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
         <div class="flex items-center gap-3">
           <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0"></i>
@@ -318,11 +312,11 @@
     </div>
   </section>
 
-  <!-- Registration + Live Stats Dashboard Section -->
+  <!-- Registration Section -->
   <section id="register" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-12 gap-10 items-start">
       
-      <!-- Registration Form Column (7 cols) -->
+      <!-- Registration Form Column -->
       <div class="lg:col-span-7">
         <div class="bg-brand-card border border-slate-700/70 rounded-3xl p-6 sm:p-9 shadow-2xl relative">
           
@@ -332,12 +326,10 @@
               <span>Free Community Registration</span>
             </div>
             <h2 class="text-2xl sm:text-3xl font-black font-display text-white">Aligarh Community Run Pass</h2>
-            <p class="text-slate-400 text-sm mt-1">Apni details enter karein. Registration 100% free hai aur turant organizer WhatsApp list me register ho jayenge.</p>
+            <p class="text-slate-400 text-sm mt-1">Apni details enter karein. Registration 100% free hai aur data directly cloud par register hoga.</p>
           </div>
 
           <form id="registrationForm" onsubmit="handleRegistration(event)" class="space-y-5">
-            
-            <!-- Full Name -->
             <div>
               <label for="fullName" class="block text-xs uppercase tracking-wider font-bold text-slate-300 mb-1.5">
                 Full Name <span class="text-red-400">*</span>
@@ -355,7 +347,6 @@
               </div>
             </div>
 
-            <!-- WhatsApp Number & Age -->
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label for="whatsapp" class="block text-xs uppercase tracking-wider font-bold text-slate-300 mb-1.5">
@@ -375,7 +366,6 @@
                     class="w-full bg-slate-900 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
                   />
                 </div>
-                <!-- Inline Error Warning for Duplicate Phone Number -->
                 <p id="phoneDuplicateNotice" class="text-xs text-rose-400 font-semibold mt-1.5 hidden flex items-center gap-1.5 bg-rose-500/10 border border-rose-500/30 rounded-lg p-2">
                   <i data-lucide="alert-circle" class="w-3.5 h-3.5 shrink-0 text-rose-400"></i>
                   <span>Yeh number pehle se registered hai! Ek number se sirf ek hi registration ho sakta hai.</span>
@@ -402,7 +392,6 @@
               </div>
             </div>
 
-            <!-- Gender & Category Selection -->
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label for="gender" class="block text-xs uppercase tracking-wider font-bold text-slate-300 mb-1.5">
@@ -439,7 +428,6 @@
               </div>
             </div>
 
-            <!-- Area in Aligarh -->
             <div>
               <label for="locationArea" class="block text-xs uppercase tracking-wider font-bold text-slate-300 mb-1.5">
                 Area in Aligarh (Colony / Ward / Campus)
@@ -456,10 +444,10 @@
               </div>
             </div>
 
-            <!-- Submit Button -->
             <div class="pt-2">
               <button 
                 type="submit" 
+                id="submitBtn"
                 class="w-full group py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 via-emerald-400 to-lime-400 hover:from-emerald-400 hover:to-lime-300 text-black font-extrabold text-base shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-2 transition duration-200"
               >
                 <i data-lucide="check" class="w-5 h-5 stroke-[3] group-hover:scale-110 transition-transform"></i>
@@ -470,16 +458,14 @@
             <p class="text-center text-xs text-slate-400">
               No spam. Aapka registration safe hai aur Sunday run ke roster mein shamil ho jayega.
             </p>
-
           </form>
 
         </div>
       </div>
 
-      <!-- Live Roster Analytics & WhatsApp Control Column (5 cols) -->
+      <!-- Live Roster Analytics & Dashboard -->
       <div class="lg:col-span-5 space-y-6">
         
-        <!-- Live Counters Card (Publicly visible stats) -->
         <div class="bg-brand-card border border-slate-800 rounded-3xl p-6 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
@@ -488,18 +474,16 @@
             </div>
             <div class="flex items-center gap-1.5 text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-lg">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span id="sync-status">Cloud Live Sync</span>
+              <span id="sync-status">Firebase Live ⚡</span>
             </div>
           </div>
 
-          <!-- Total Count Big Display -->
           <div class="bg-slate-950/90 rounded-2xl p-5 border border-slate-800/80 mb-5 text-center">
             <span class="text-xs font-semibold text-slate-400 uppercase tracking-widest block mb-1">Total Registrations</span>
             <div class="text-5xl font-black font-display text-white tracking-tight" id="stat-total">0</div>
             <span class="text-xs text-emerald-400 mt-1 inline-block font-medium">Ready for upcoming Sunday Run</span>
           </div>
 
-          <!-- Male vs Female Breakdown -->
           <div class="grid grid-cols-2 gap-3 mb-5">
             <div class="bg-slate-900 border border-slate-800 p-3.5 rounded-2xl flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center font-bold">
@@ -522,7 +506,6 @@
             </div>
           </div>
 
-          <!-- Age Group Breakdown -->
           <div>
             <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
               <i data-lucide="bar-chart-2" class="w-4 h-4 text-emerald-400"></i>
@@ -547,13 +530,10 @@
               </div>
             </div>
           </div>
-
         </div>
 
-        <!-- Blurred & Locked Organizer Area -->
+        <!-- Locked Organizer Area -->
         <div class="relative bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border border-slate-800 rounded-3xl p-6 overflow-hidden">
-          
-          <!-- Blurred mock content in background -->
           <div class="filter blur-[6px] opacity-25 select-none pointer-events-none space-y-3">
             <div class="h-5 bg-slate-700 rounded-lg w-1/3"></div>
             <div class="h-10 bg-slate-800 rounded-xl"></div>
@@ -561,7 +541,6 @@
             <div class="h-10 bg-slate-800 rounded-xl"></div>
           </div>
 
-          <!-- Glass Lock Overlay -->
           <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-[4px] flex flex-col items-center justify-center p-6 text-center">
             <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-emerald-500/40 text-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-500/10 mb-3">
               <i data-lucide="lock" class="w-7 h-7 stroke-[2]"></i>
@@ -581,7 +560,6 @@
               <span>Enter Organizer Password</span>
             </button>
           </div>
-
         </div>
 
       </div>
@@ -589,17 +567,15 @@
     </div>
   </section>
 
-  <!-- Community FAQs & Guidelines -->
+  <!-- Community FAQs -->
   <section class="py-16 bg-slate-900/40 border-t border-brand-border">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-      
       <div class="text-center space-y-2">
         <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase">First Time Joining?</h2>
         <h3 class="font-display text-2xl sm:text-3xl font-black text-white">Frequently Asked Questions</h3>
       </div>
 
       <div class="grid md:grid-cols-2 gap-5">
-        
         <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 space-y-2">
           <h4 class="font-bold text-white text-base flex items-center gap-2">
             <i data-lucide="help-circle" class="w-4 h-4 text-emerald-400"></i>
@@ -639,16 +615,13 @@
             Haan bilkul, ARC ek bahut respectful, safe aur family-friendly community hai jisme students, working professionals aur seniors sabhi participate karte hain.
           </p>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- Community Photo Gallery Section (Viewable by all, Uploadable ONLY by Organizers) -->
+  <!-- Community Photo Gallery -->
   <section id="gallery" class="py-16 bg-slate-950/80 border-t border-brand-border relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-      
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
@@ -670,18 +643,15 @@
         </button>
       </div>
 
-      <!-- Public Photo Grid Display -->
       <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <!-- Rendered by JS -->
       </div>
-
     </div>
   </section>
 
-  <!-- Organizers & Community Handles Section -->
+  <!-- Organizers Section -->
   <section class="py-16 bg-slate-950 border-t border-brand-border">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-      
       <div class="text-center space-y-2">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-wider">
           <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
@@ -694,8 +664,6 @@
       </div>
 
       <div class="grid sm:grid-cols-3 gap-6">
-        
-        <!-- ARC Official Handle -->
         <a href="https://www.instagram.com/aligarhrunningcommunity" target="_blank" rel="noopener noreferrer" class="group bg-brand-card hover:bg-slate-900 border border-slate-800 hover:border-pink-500/50 p-6 rounded-3xl transition duration-300 flex flex-col items-center text-center relative overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition duration-300"></div>
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-[2px] mb-4 group-hover:scale-105 transition-transform shrink-0">
@@ -714,7 +682,6 @@
           </div>
         </a>
 
-        <!-- Organizer: Nikhil Suryavanshi -->
         <a href="https://www.instagram.com/nikhil_suryavanshi_07" target="_blank" rel="noopener noreferrer" class="group bg-brand-card hover:bg-slate-900 border border-slate-800 hover:border-pink-500/50 p-6 rounded-3xl transition duration-300 flex flex-col items-center text-center relative overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition duration-300"></div>
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-[2px] mb-4 group-hover:scale-105 transition-transform shrink-0">
@@ -733,7 +700,6 @@
           </div>
         </a>
 
-        <!-- Organizer: Ubaid Pathan -->
         <a href="https://www.instagram.com/ubaid____pathan01" target="_blank" rel="noopener noreferrer" class="group bg-brand-card hover:bg-slate-900 border border-slate-800 hover:border-pink-500/50 p-6 rounded-3xl transition duration-300 flex flex-col items-center text-center relative overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition duration-300"></div>
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-[2px] mb-4 group-hover:scale-105 transition-transform shrink-0">
@@ -751,16 +717,13 @@
             <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </div>
         </a>
-
       </div>
-
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-black/95 border-t border-slate-800 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-      
       <div class="space-y-1">
         <span class="font-display font-black text-xl tracking-wide text-white uppercase">
           Aligarh Running Community
@@ -796,10 +759,14 @@
             <i data-lucide="users" class="w-5 h-5 text-emerald-400"></i>
             <span>All Registrations & Details</span>
           </h3>
-          <p class="text-xs text-slate-400">Saari entries yahan securely available hain — WhatsApp par bhejane ki zaroorat nahi.</p>
+          <p class="text-xs text-slate-400">Saari entries yahan securely available hain — Firebase Cloud se direct synced.</p>
         </div>
         <button onclick="toggleRosterModal()" class="w-9 h-9 rounded-full bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center transition">
-      <!-- Organizer Tab Switcher: Registrations vs Upload Photos vs Edition Manager -->
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Organizer Tab Switcher -->
       <div class="flex flex-wrap gap-2 border-b border-slate-800/80 pt-3 pb-2 text-xs font-bold">
         <button id="tabBtnRunners" onclick="switchOrganizerTab('runners')" class="px-3.5 py-2 rounded-xl bg-emerald-500 text-black flex items-center gap-1.5 transition">
           <i data-lucide="list" class="w-3.5 h-3.5"></i>
@@ -817,7 +784,6 @@
 
       <!-- TAB 1: Runner List -->
       <div id="orgTabRunners" class="space-y-3 flex-1 overflow-y-auto">
-        <!-- Quick Summary Cards inside Organizer Panel -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 my-3 text-center text-xs">
           <div class="bg-slate-900 border border-slate-800 p-2.5 rounded-xl">
             <span class="text-slate-400 block text-[10px]">Total Registered</span>
@@ -837,7 +803,6 @@
           </div>
         </div>
 
-        <!-- Search & Filters -->
         <div class="pb-2 flex flex-wrap gap-2 items-center justify-between">
           <div class="relative flex-1 min-w-[220px]">
             <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
@@ -851,13 +816,12 @@
           </div>
         </div>
 
-        <!-- Roster List Table / Container -->
         <div class="overflow-y-auto divide-y divide-slate-800/80 pr-1 my-2 max-h-[380px]" id="rosterListContainer">
           <!-- Rendered by JS -->
         </div>
       </div>
 
-      <!-- TAB 2: Upload Photos (Organizer Only) -->
+      <!-- TAB 2: Upload Photos -->
       <div id="orgTabPhotos" class="hidden space-y-4 pt-3 flex-1 overflow-y-auto">
         <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-2xl space-y-3">
           <h4 class="text-sm font-bold text-white flex items-center gap-2">
@@ -901,7 +865,6 @@
           </button>
         </div>
 
-        <!-- Manager list of current photos -->
         <div>
           <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Uploaded Gallery Photos</h4>
           <div id="orgPhotosList" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -910,7 +873,7 @@
         </div>
       </div>
 
-      <!-- TAB 3: Edition Manager (Organizer Can Update Directly) -->
+      <!-- TAB 3: Edition Manager -->
       <div id="orgTabEdition" class="hidden space-y-4 pt-3 flex-1 overflow-y-auto">
         <div class="bg-slate-900/90 border border-slate-800 p-4 sm:p-5 rounded-2xl space-y-4">
           <div class="flex items-center justify-between">
@@ -921,7 +884,7 @@
             <span class="text-[10px] bg-amber-500/20 text-amber-400 font-bold px-2 py-0.5 rounded">Live Sync</span>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Yahan se aap Sunday Run ka agla Edition (#Week6, #Week7 vagaira), timings aur venue kabhi bhi badal sakte hain. Update karte hi puri website par yeh automatically change ho jayega.
+            Yahan se aap Sunday Run ka agla Edition, timings aur venue badal sakte hain.
           </p>
 
           <form onsubmit="handleSaveEditionSettings(event)" class="space-y-3.5">
@@ -1007,7 +970,6 @@
                 type="button" 
                 onclick="advanceToNextEdition()" 
                 class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 text-xs font-bold transition border border-slate-700"
-                title="Automatically advance to next week (e.g. #5 -> #6)"
               >
                 <i data-lucide="fast-forward" class="w-3.5 h-3.5"></i>
                 <span>Advance to Next Week (+1)</span>
@@ -1067,7 +1029,7 @@
     </div>
   </div>
 
-  <!-- In-App Notification Toast (No alert() used) -->
+  <!-- In-App Notification Toast -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
     <div class="bg-slate-900 border border-emerald-500/50 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
       <div class="w-7 h-7 rounded-full bg-emerald-500 text-black flex items-center justify-center font-black" id="toast-icon">
@@ -1080,23 +1042,144 @@
     </div>
   </div>
 
-  <!-- Application Logic -->
-  <script>
-    const STORAGE_KEY = "ARC_SUNDAY_REGISTRATIONS_V2";
+  <!-- FIREBASE SDK & APPLICATION SCRIPTS -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { 
+      getFirestore, 
+      collection, 
+      addDoc, 
+      deleteDoc, 
+      doc, 
+      onSnapshot, 
+      query, 
+      orderBy 
+    } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+    // Your Web App's Firebase Configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA4fECe_ETOw5Yp6rUmhq07ydRFt5ugPnI",
+      authDomain: "aligarhrunningcommunity-236a3.firebaseapp.com",
+      projectId: "aligarhrunningcommunity-236a3",
+      storageBucket: "aligarhrunningcommunity-236a3.firebasestorage.app",
+      messagingSenderId: "1034336868050",
+      appId: "1:1034336868050:web:0da76c38ca78ab2898bf0b",
+      measurementId: "G-LR351CLF91"
+    };
+
+    // Initialize Firebase & Firestore
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
     const GALLERY_STORAGE_KEY = "ARC_GALLERY_PHOTOS_V1";
     const EDITION_CONFIG_KEY = "ARC_EDITION_CONFIG_V1";
-    const ORGANIZER_PIN = "1934"; // Default Password for Organizer
+    const ORGANIZER_PIN = "1934";
     let pendingActionAfterPin = null;
-
-    // Public Cloud Storage Bin for ARC Aligarh (Universal Cross-Device Sync)
-    // Works across all mobile phones & PCs simultaneously without authentication errors
-    const CLOUD_BIN_KEY = "arc_aligarh_live_v5";
-    const CLOUD_API_URL = `https://api.restful-api.dev/objects/ff808181932badb8019335efdbb90001`;
-    const FALLBACK_KV_URL = `https://kvdb.io/6sVbT1x9C3X67yK9d3PjB2/${CLOUD_BIN_KEY}`;
-
     let memoryRunners = [];
 
-    // Default Edition Configuration (Organizers can edit & advance anytime)
+    // Real-Time Firebase Listener for Runners
+    function listenToRunners() {
+      const q = query(collection(db, "runners"), orderBy("createdAt", "desc"));
+      onSnapshot(q, (snapshot) => {
+        memoryRunners = [];
+        snapshot.forEach((docSnap) => {
+          memoryRunners.push({ id: docSnap.id, ...docSnap.data() });
+        });
+        updateDashboard();
+        renderRosterTable();
+        const syncStatus = document.getElementById('sync-status');
+        if (syncStatus) syncStatus.innerText = "Firebase Live ⚡";
+      }, (error) => {
+        console.error("Firebase listen error:", error);
+      });
+    }
+
+    // Window-level functions for form handling & interaction
+    window.handleRegistration = async function(e) {
+      e.preventDefault();
+      const form = document.getElementById('registrationForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const name = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('whatsapp').value.trim();
+      const age = parseInt(document.getElementById('age').value.trim(), 10);
+      const gender = document.getElementById('gender').value;
+      const category = document.getElementById('distanceCategory').value;
+      const area = document.getElementById('locationArea').value.trim() || 'Aligarh';
+
+      if (!name || !phone || !age || !gender || !category) {
+        showToast("Error", "Kripya sabhi zaroori fields bharein.", "error");
+        return;
+      }
+
+      const duplicateRunner = memoryRunners.find(r => r.phone === phone);
+      if (duplicateRunner) {
+        const notice = document.getElementById('phoneDuplicateNotice');
+        if (notice) notice.classList.remove('hidden');
+        showToast("Already Registered!", `Number ${phone} pehle se registered hai!`, "error");
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Registering...";
+      }
+
+      try {
+        const newRunner = {
+          name,
+          phone,
+          age,
+          gender,
+          category,
+          area,
+          createdAt: Date.now(),
+          registeredAt: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'short', timeStyle: 'short' })
+        };
+
+        await addDoc(collection(db, "runners"), newRunner);
+        form.reset();
+        const notice = document.getElementById('phoneDuplicateNotice');
+        if (notice) notice.classList.add('hidden');
+        showRegistrationSuccessModal(newRunner);
+      } catch (err) {
+        console.error("Firestore error:", err);
+        showToast("Error", "Registration save nahi ho paya. Dobara koshish karein.", "error");
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `<i data-lucide="check" class="w-5 h-5 stroke-[3]"></i><span>Complete Free Registration</span>`;
+          lucide.createIcons();
+        }
+      }
+    };
+
+    window.confirmDeleteRunner = async function(runnerId) {
+      closeDeleteConfirm();
+      try {
+        await deleteDoc(doc(db, "runners", runnerId));
+        showToast("Runner Removed", "Runner entry ko roster se safalta purvak hata diya gaya hai.");
+      } catch (err) {
+        console.error("Delete error:", err);
+        showToast("Error", "Delete nahi ho paya.", "error");
+      }
+    };
+
+    window.checkPhoneDuplication = function(phoneValue) {
+      const notice = document.getElementById('phoneDuplicateNotice');
+      if (!phoneValue || phoneValue.length < 10) {
+        if (notice) notice.classList.add('hidden');
+        return;
+      }
+      const isDuplicate = memoryRunners.some(r => r.phone === phoneValue.trim());
+      if (isDuplicate) {
+        if (notice) notice.classList.remove('hidden');
+      } else {
+        if (notice) notice.classList.add('hidden');
+      }
+      lucide.createIcons();
+    };
+
+    // Edition Config helpers
     const DEFAULT_EDITION = {
       editionNum: "5",
       editionTag: "#Week5",
@@ -1107,50 +1190,37 @@
       routeDesc: "5 KM Circle Loop (Spot par announce hoga)"
     };
 
-    function getEditionConfig() {
+    window.getEditionConfig = function() {
       try {
         const stored = localStorage.getItem(EDITION_CONFIG_KEY);
         if (stored) return JSON.parse(stored);
       } catch (e) {
-        console.error("Config load error:", e);
+        console.error(e);
       }
       return DEFAULT_EDITION;
-    }
+    };
 
-    function saveEditionConfig(cfg) {
-      try {
-        localStorage.setItem(EDITION_CONFIG_KEY, JSON.stringify(cfg));
-      } catch (e) {
-        console.error("Config save error:", e);
-      }
-    }
+    window.saveEditionConfig = function(cfg) {
+      localStorage.setItem(EDITION_CONFIG_KEY, JSON.stringify(cfg));
+    };
 
-    // Apply edition configuration across UI elements
-    function applyEditionConfig() {
+    window.applyEditionConfig = function() {
       const cfg = getEditionConfig();
-
       const elTag = document.getElementById('hero-edition-tag');
       if (elTag) elTag.innerText = `Upcoming Edition ${cfg.editionTag}`;
-
       const elBadge = document.getElementById('hero-edition-badge');
       if (elBadge) elBadge.innerText = `#${cfg.editionNum}`;
-
       const elTitle = document.getElementById('hero-edition-title');
       if (elTitle) elTitle.innerText = `Aligarh Sunday Run #${cfg.editionNum}`;
-
       const elVenue = document.getElementById('hero-venue-name');
       if (elVenue) elVenue.innerText = cfg.venueName;
-
       const elSchedule = document.getElementById('hero-schedule-desc');
       if (elSchedule) elSchedule.innerText = `${cfg.reportingTime} Reporting & Warm-Up • ${cfg.startTime} Run Start`;
-
       const elReporting = document.getElementById('hero-display-reporting');
       if (elReporting) elReporting.innerText = cfg.reportingTime;
-
       const elStart = document.getElementById('hero-display-start');
       if (elStart) elStart.innerText = cfg.startTime;
 
-      // Populate settings form inputs if open
       const inNum = document.getElementById('cfgEditionNum');
       if (inNum) inNum.value = cfg.editionNum;
       const inTag = document.getElementById('cfgEditionTag');
@@ -1161,10 +1231,9 @@
       if (inStart) inStart.value = cfg.startTime;
       const inVenue = document.getElementById('cfgVenueName');
       if (inVenue) inVenue.value = cfg.venueName;
-    }
+    };
 
-    // Save Organizer's custom Edition Form
-    function handleSaveEditionSettings(e) {
+    window.handleSaveEditionSettings = function(e) {
       e.preventDefault();
       const cfg = {
         editionNum: document.getElementById('cfgEditionNum').value.trim() || "5",
@@ -1175,347 +1244,26 @@
         venueSub: "Near University Circle / Lal Diggi, Aligarh",
         routeDesc: "5 KM Circle Loop (Spot par announce hoga)"
       };
-
       saveEditionConfig(cfg);
       applyEditionConfig();
-      showToast("Edition Updated", `Edition #${cfg.editionNum} (${cfg.editionTag}) website par live ho gaya hai!`);
-    }
+      showToast("Edition Updated", `Edition #${cfg.editionNum} live ho gaya hai!`);
+    };
 
-    // Quick One-Click Advance to Next Sunday (+1)
-    function advanceToNextEdition() {
+    window.advanceToNextEdition = function() {
       const cfg = getEditionConfig();
       const currentNum = parseInt(cfg.editionNum, 10) || 5;
       const nextNum = currentNum + 1;
-
       cfg.editionNum = String(nextNum);
       cfg.editionTag = `#Week${nextNum}`;
-
       saveEditionConfig(cfg);
       applyEditionConfig();
       showToast("Advanced Edition", `Naya edition Week #${nextNum} live ho chuka hai!`);
-    }
+    };
 
-    // Sample default gallery photos (can be deleted or added by organizer)
-    const DEFAULT_GALLERY_PHOTOS = [
-      {
-        id: "g_1",
-        url: "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=800&q=80",
-        caption: "Habitat Centre Morning Gathering",
-        date: "Sunday Run #4"
-      },
-      {
-        id: "g_2",
-        url: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=800&q=80",
-        caption: "5K Circle Stride & Warm-Up",
-        date: "Sunday Run #3"
-      },
-      {
-        id: "g_3",
-        url: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80",
-        caption: "Fitness Energy in Aligarh",
-        date: "Sunday Run #2"
-      }
-    ];
-
-    // Read cached local list
-    function getRegistrations() {
-      if (memoryRunners && memoryRunners.length > 0) {
-        return memoryRunners;
-      }
-      try {
-        const stored = localStorage.getItem(STORAGE_KEY);
-        if (stored) {
-          memoryRunners = JSON.parse(stored);
-          return memoryRunners;
-        }
-      } catch (e) {
-        console.error("Local read error:", e);
-      }
-      return [];
-    }
-
-    // Merge two arrays of runners by unique phone number / id without losing data
-    function mergeRunnerLists(localList, cloudList) {
-      if (!Array.isArray(cloudList)) return localList;
-      if (!Array.isArray(localList) || localList.length === 0) return cloudList;
-
-      const map = new Map();
-      // Add existing local entries
-      localList.forEach(item => {
-        if (item && item.phone) map.set(item.phone, item);
-      });
-      // Add or update with cloud entries
-      cloudList.forEach(item => {
-        if (item && item.phone) {
-          if (!map.has(item.phone)) {
-            map.set(item.phone, item);
-          }
-        }
-      });
-
-      return Array.from(map.values());
-    }
-
-    // Save to LocalStorage + Push to Global Universal Cloud Bin
-    async function saveRegistrations(list) {
-      memoryRunners = list;
-      try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
-      } catch (e) {
-        console.error("Local save error:", e);
-      }
-
-      const syncStatus = document.getElementById('sync-status');
-      if (syncStatus) syncStatus.innerText = "Syncing...";
-
-      // Send to Universal Cloud Store
-      try {
-        await fetch(FALLBACK_KV_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(list)
-        });
-        if (syncStatus) syncStatus.innerText = "Cloud Live Sync ⚡";
-      } catch (err) {
-        console.warn("KV sync note:", err);
-      }
-    }
-
-    // Fetch live registrations from universal cloud so all phones see the exact same count
-    async function fetchCloudRegistrations() {
-      try {
-        const res = await fetch(FALLBACK_KV_URL, { cache: "no-store" });
-        if (res.ok) {
-          const cloudData = await res.json();
-          if (Array.isArray(cloudData)) {
-            const merged = mergeRunnerLists(getRegistrations(), cloudData);
-            memoryRunners = merged;
-            try {
-              localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
-            } catch (e) {}
-            
-            const syncStatus = document.getElementById('sync-status');
-            if (syncStatus) syncStatus.innerText = "Cloud Live Sync ⚡";
-            
-            updateDashboard();
-            renderRosterTable();
-          }
-        }
-      } catch (e) {
-        // Silently keep local if network is momentarily disconnected
-      }
-    }
-
-    // Periodic automatic pull every 4 seconds across all user devices
-    function startRealtimeSync() {
-      fetchCloudRegistrations();
-      setInterval(fetchCloudRegistrations, 4000);
-    }
-
-    // Load gallery photos
-    function getGalleryPhotos() {
-      try {
-        const stored = localStorage.getItem(GALLERY_STORAGE_KEY);
-        if (stored !== null) {
-          return JSON.parse(stored);
-        }
-      } catch (e) {
-        console.error("Gallery storage error:", e);
-      }
-      return DEFAULT_GALLERY_PHOTOS;
-    }
-
-    // Save gallery photos
-    function saveGalleryPhotos(photos) {
-      try {
-        localStorage.setItem(GALLERY_STORAGE_KEY, JSON.stringify(photos));
-      } catch (e) {
-        console.error("Gallery save error:", e);
-      }
-    }
-
-    // Real-time phone check to flag duplicates as user types
-    function checkPhoneDuplication(phoneValue) {
-      const notice = document.getElementById('phoneDuplicateNotice');
-      if (!phoneValue || phoneValue.length < 10) {
-        if (notice) notice.classList.add('hidden');
-        return;
-      }
-      const runners = getRegistrations();
-      const isDuplicate = runners.some(r => r.phone === phoneValue.trim());
-      if (isDuplicate) {
-        if (notice) notice.classList.remove('hidden');
-      } else {
-        if (notice) notice.classList.add('hidden');
-      }
-      lucide.createIcons();
-    }
-
-    // Render Public Gallery Grid
-    function renderGallery() {
-      const grid = document.getElementById('galleryGrid');
-      if (!grid) return;
-      const photos = getGalleryPhotos();
-
-      if (photos.length === 0) {
-        grid.innerHTML = `
-          <div class="col-span-full py-12 text-center text-slate-500 text-xs bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
-            <i data-lucide="image" class="w-8 h-8 mx-auto text-slate-600 mb-2"></i>
-            Abhi koi photo upload nahi hui hai. Organizer password enter karke upload kar sakte hain.
-          </div>
-        `;
-        lucide.createIcons();
-        return;
-      }
-
-      grid.innerHTML = photos.map(photo => `
-        <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 aspect-square shadow-lg">
-          <img 
-            src="${escapeHtml(photo.url)}" 
-            alt="${escapeHtml(photo.caption || 'Aligarh Running Community')}" 
-            class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-            loading="lazy"
-            onerror="this.src='https://placehold.co/600x600/111827/10b981?text=ARC+Photo'"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3.5">
-            <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">${escapeHtml(photo.date || 'Sunday Run')}</span>
-            <p class="text-xs font-semibold text-white truncate">${escapeHtml(photo.caption || 'Sunday Run Moment')}</p>
-          </div>
-        </div>
-      `).join('');
-
-      lucide.createIcons();
-    }
-
-    // Render Organizer Photo Manager in Drawer
-    function renderOrganizerPhotos() {
-      const container = document.getElementById('orgPhotosList');
-      if (!container) return;
-      const photos = getGalleryPhotos();
-
-      if (photos.length === 0) {
-        container.innerHTML = `<div class="col-span-full text-xs text-slate-500 py-4">Koi photos uplod nahi hain.</div>`;
-        return;
-      }
-
-      container.innerHTML = photos.map(photo => `
-        <div class="bg-slate-950 border border-slate-800 rounded-xl p-2 relative group">
-          <img 
-            src="${escapeHtml(photo.url)}" 
-            class="w-full h-24 object-cover rounded-lg mb-1.5"
-            onerror="this.src='https://placehold.co/200x200/111827/10b981?text=Photo'"
-          />
-          <p class="text-[11px] text-slate-300 truncate font-semibold">${escapeHtml(photo.caption || 'ARC Photo')}</p>
-          <button 
-            onclick="deleteGalleryPhoto('${photo.id}')" 
-            class="mt-1.5 w-full py-1 text-[10px] font-bold bg-rose-500/15 hover:bg-rose-500/30 text-rose-400 rounded-lg transition flex items-center justify-center gap-1"
-          >
-            <i data-lucide="trash-2" class="w-3 h-3"></i>
-            <span>Delete</span>
-          </button>
-        </div>
-      `).join('');
-
-      lucide.createIcons();
-    }
-
-    // Handle Uploading of photo by Organizer
-    function handleOrganizerPhotoUpload() {
-      const fileInput = document.getElementById('photoFileInput');
-      const captionInput = document.getElementById('photoCaptionInput');
-      const caption = captionInput ? captionInput.value.trim() : '';
-
-      if (!fileInput.files || fileInput.files.length === 0) {
-        showToast("Photo Missing", "Kripya apne device se ek photo select karein.", "error");
-        return;
-      }
-
-      const file = fileInput.files[0];
-      const reader = new FileReader();
-
-      reader.onload = function(e) {
-        const base64Url = e.target.result;
-        const photos = getGalleryPhotos();
-
-        const newPhoto = {
-          id: "photo_" + Date.now(),
-          url: base64Url,
-          caption: caption || "Sunday 5K Run",
-          date: "Edition #5"
-        };
-
-        photos.unshift(newPhoto);
-        saveGalleryPhotos(photos);
-
-        fileInput.value = '';
-        if (captionInput) captionInput.value = '';
-
-        renderGallery();
-        renderOrganizerPhotos();
-        showToast("Photo Uploaded", "Photo gallery me safalta purvak add ho gayi hai!");
-      };
-
-      reader.readAsDataURL(file);
-    }
-
-    // Delete a gallery photo
-    function deleteGalleryPhoto(photoId) {
-      let photos = getGalleryPhotos();
-      photos = photos.filter(p => p.id !== photoId);
-      saveGalleryPhotos(photos);
-      renderGallery();
-      renderOrganizerPhotos();
-      showToast("Photo Deleted", "Photo gallery se hata di gayi hai.");
-    }
-
-    // Switch Organizer Modal Tabs
-    function switchOrganizerTab(tab) {
-      const tabRunners = document.getElementById('orgTabRunners');
-      const tabPhotos = document.getElementById('orgTabPhotos');
-      const tabEdition = document.getElementById('orgTabEdition');
-      const btnRunners = document.getElementById('tabBtnRunners');
-      const btnPhotos = document.getElementById('tabBtnPhotos');
-      const btnEdition = document.getElementById('tabBtnEdition');
-
-      // Hide all tabs first
-      tabRunners.classList.add('hidden');
-      tabPhotos.classList.add('hidden');
-      if (tabEdition) tabEdition.classList.add('hidden');
-
-      // Reset button styles
-      const inactiveClass = 'px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 flex items-center gap-1.5 transition border border-slate-800 font-bold';
-      btnRunners.className = inactiveClass;
-      btnPhotos.className = inactiveClass;
-      if (btnEdition) btnEdition.className = inactiveClass;
-
-      const activeClass = 'px-3.5 py-2 rounded-xl bg-emerald-500 text-black flex items-center gap-1.5 transition font-bold';
-
-      if (tab === 'runners') {
-        tabRunners.classList.remove('hidden');
-        btnRunners.className = activeClass;
-      } else if (tab === 'photos') {
-        tabPhotos.classList.remove('hidden');
-        btnPhotos.className = activeClass;
-        renderOrganizerPhotos();
-      } else if (tab === 'edition') {
-        if (tabEdition) tabEdition.classList.remove('hidden');
-        if (btnEdition) btnEdition.className = activeClass;
-        applyEditionConfig();
-      }
-      lucide.createIcons();
-    }
-
-    // Calculate Demographic Statistics
-    function calculateAnalytics(runners) {
+    window.calculateAnalytics = function(runners) {
       const total = runners.length;
-      let male = 0;
-      let female = 0;
-      let otherGender = 0;
-
-      let under18 = 0;
-      let age18to25 = 0;
-      let age26to40 = 0;
-      let age40plus = 0;
+      let male = 0, female = 0, otherGender = 0;
+      let under18 = 0, age18to25 = 0, age26to40 = 0, age40plus = 0;
 
       runners.forEach(r => {
         const g = (r.gender || '').toLowerCase();
@@ -1530,38 +1278,20 @@
         else age40plus++;
       });
 
-      return {
-        total,
-        male,
-        female,
-        otherGender,
-        under18,
-        age18to25,
-        age26to40,
-        age40plus
-      };
-    }
+      return { total, male, female, otherGender, under18, age18to25, age26to40, age40plus };
+    };
 
-    // Refresh UI Dashboard
-    function updateDashboard() {
-      const runners = getRegistrations();
-      const stats = calculateAnalytics(runners);
-
-      // Public Counters
+    window.updateDashboard = function() {
+      const stats = calculateAnalytics(memoryRunners);
       document.getElementById('stat-total').innerText = stats.total;
       document.getElementById('hero-roster-count').innerText = `${stats.total} Runners Registered`;
-
-      // Public Gender Counters
       document.getElementById('stat-male').innerText = stats.male;
       document.getElementById('stat-female').innerText = stats.female;
-
-      // Public Age Group Counters
       document.getElementById('stat-age-under18').innerText = stats.under18;
       document.getElementById('stat-age-18-25').innerText = stats.age18to25;
       document.getElementById('stat-age-26-40').innerText = stats.age26to40;
       document.getElementById('stat-age-40plus').innerText = stats.age40plus;
 
-      // Organizer Drawer Counters
       const orgTotal = document.getElementById('org-total');
       if (orgTotal) orgTotal.innerText = stats.total;
       const orgMale = document.getElementById('org-male');
@@ -1570,188 +1300,16 @@
       if (orgFemale) orgFemale.innerText = stats.female;
       const tabCount = document.getElementById('tabCountRunners');
       if (tabCount) tabCount.innerText = stats.total;
-    }
+    };
 
-    // Handle Form Submission - STRICT DUPLICATE NUMBER RESTRICTION & CLOUD BROADCAST
-    async function handleRegistration(e) {
-      e.preventDefault();
-
-      const form = document.getElementById('registrationForm');
-      const name = document.getElementById('fullName').value.trim();
-      const phone = document.getElementById('whatsapp').value.trim();
-      const age = parseInt(document.getElementById('age').value.trim(), 10);
-      const gender = document.getElementById('gender').value;
-      const category = document.getElementById('distanceCategory').value;
-      const area = document.getElementById('locationArea').value.trim() || 'Aligarh';
-
-      if (!name || !phone || !age || !gender || !category) {
-        showToast("Error", "Kripya sabhi zaroori fields bharein.", "error");
-        return;
-      }
-
-      // Check against current list to prevent duplicate phone number registration
-      const currentList = getRegistrations();
-      const duplicateRunner = currentList.find(r => r.phone === phone);
-
-      if (duplicateRunner) {
-        const notice = document.getElementById('phoneDuplicateNotice');
-        if (notice) notice.classList.remove('hidden');
-        showToast(
-          "Already Registered!", 
-          `Number ${phone} pehle se (${duplicateRunner.name}) ke naam par darj hai! Ek number se sirf ek hi registration ho sakta hai.`, 
-          "error"
-        );
-        return;
-      }
-
-      const newRunner = {
-        id: "arc_" + Date.now(),
-        name,
-        phone,
-        age,
-        gender,
-        category,
-        area,
-        registeredAt: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'short', timeStyle: 'short' })
-      };
-
-      currentList.unshift(newRunner); // Add newest on top
-      await saveRegistrations(currentList);
-
-      // Form reset & hide warning
-      form.reset();
-      const notice = document.getElementById('phoneDuplicateNotice');
-      if (notice) notice.classList.add('hidden');
-
-      // UI stats update immediately
-      updateDashboard();
-
-      // Show inspiring in-app celebration card without any WhatsApp forwarding
-      showRegistrationSuccessModal(newRunner);
-    }
-
-    // Inspiring & Encouraging Completion Pop-up for the User
-    function showRegistrationSuccessModal(runner) {
-      const cfg = getEditionConfig();
-      const modalHtml = `
-        <div id="successDialog" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-          <div class="bg-brand-card border border-emerald-500/60 w-full max-w-lg rounded-3xl p-6 sm:p-8 text-center shadow-2xl relative overflow-hidden">
-            
-            <div class="absolute -top-12 -right-12 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
-
-            <div class="w-16 h-16 rounded-3xl bg-gradient-to-tr from-emerald-500 to-lime-400 text-black mx-auto flex items-center justify-center mb-4 shadow-xl shadow-emerald-500/25">
-              <i data-lucide="sparkles" class="w-8 h-8 stroke-[2.5]"></i>
-            </div>
-
-            <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-black uppercase tracking-wider mb-2">
-              🎉 Registration Successful!
-            </span>
-
-            <h3 class="text-2xl sm:text-3xl font-black text-white font-display">Shabash, ${escapeHtml(runner.name)}!</h3>
-            
-            <!-- Motivational Message -->
-            <div class="my-4 bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4 text-emerald-300 text-sm leading-relaxed font-medium">
-              "Aapne apni fitness aur sehat ke liye sabse bada kadam utha liya hai! Aligarh ko fit, energetic aur swasth banana hum sabki zimmedari hai. We are super proud of you!"
-            </div>
-
-            <!-- Ticket details for runner -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-left text-xs space-y-2.5 mb-6">
-              <div class="flex justify-between items-center text-slate-300 border-b border-slate-800 pb-2">
-                <span class="text-slate-400">Run Edition:</span>
-                <span class="font-bold text-white">Aligarh Sunday Run #${escapeHtml(cfg.editionNum)} (${escapeHtml(cfg.editionTag)})</span>
-              </div>
-              <div class="flex justify-between items-center text-slate-300">
-                <span class="text-slate-400">Gathering Point:</span>
-                <span class="font-bold text-emerald-400">${escapeHtml(cfg.venueName)}</span>
-              </div>
-              <div class="flex justify-between items-center text-slate-300">
-                <span class="text-slate-400">Reporting Time:</span>
-                <span class="font-bold text-white">${escapeHtml(cfg.reportingTime)} (Warm-Up Session)</span>
-              </div>
-              <div class="flex justify-between items-center text-slate-300">
-                <span class="text-slate-400">Starting Time:</span>
-                <span class="font-bold text-white">${escapeHtml(cfg.startTime)} Sharp Start</span>
-              </div>
-              <div class="flex justify-between items-center text-slate-300 pt-1">
-                <span class="text-slate-400">Your Goal:</span>
-                <span class="font-extrabold text-lime-400">5 KM Community Circle Run</span>
-              </div>
-            </div>
-
-            <div class="space-y-2">
-              <button 
-                onclick="closeSuccessDialog()" 
-                class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-lime-400 hover:from-emerald-400 hover:to-lime-300 text-black font-black text-sm py-3.5 px-4 rounded-xl shadow-lg transition"
-              >
-                <i data-lucide="check" class="w-4 h-4 stroke-[3]"></i>
-                <span>Great, Sunday ${escapeHtml(cfg.reportingTime)} Milte Hain!</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      `;
-
-      const div = document.createElement('div');
-      div.id = 'tempSuccessWrapper';
-      div.innerHTML = modalHtml;
-      document.body.appendChild(div);
-      lucide.createIcons();
-    }
-
-    function closeSuccessDialog() {
-      const el = document.getElementById('tempSuccessWrapper');
-      if (el) el.remove();
-    }
-
-    // Password Prompt for Organizer
-    function openPinModal(action = null) {
-      pendingActionAfterPin = action;
-      const pinModal = document.getElementById('pinModal');
-      const input = document.getElementById('organizerPinInput');
-      const err = document.getElementById('pinErrorMsg');
-      if (input) input.value = '';
-      if (err) err.classList.add('hidden');
-      pinModal.classList.remove('hidden');
-      pinModal.classList.add('flex');
-      if (input) input.focus();
-    }
-
-    function closePinModal() {
-      const pinModal = document.getElementById('pinModal');
-      pinModal.classList.add('hidden');
-      pinModal.classList.remove('flex');
-      pendingActionAfterPin = null;
-    }
-
-    function verifyOrganizerPin(e) {
-      e.preventDefault();
-      const entered = document.getElementById('organizerPinInput').value;
-      const err = document.getElementById('pinErrorMsg');
-      if (entered === ORGANIZER_PIN) {
-        const action = pendingActionAfterPin;
-        closePinModal();
-        toggleRosterModal();
-        if (action === 'gallery') {
-          switchOrganizerTab('photos');
-        } else {
-          switchOrganizerTab('runners');
-        }
-        showToast("Organizer Access Granted", "Welcome to the Admin Roster & Gallery Dashboard.");
-      } else {
-        err.classList.remove('hidden');
-      }
-    }
-
-    // Render Full Details Table inside Organizer Modal
-    function renderRosterTable() {
+    window.renderRosterTable = function() {
       const container = document.getElementById('rosterListContainer');
       const searchInput = document.getElementById('searchRunnerInput');
       const searchQuery = (searchInput ? searchInput.value : '').toLowerCase();
-      const runners = getRegistrations();
 
-      const filtered = runners.filter(r => {
-        return r.name.toLowerCase().includes(searchQuery) ||
-               r.phone.includes(searchQuery) ||
+      const filtered = memoryRunners.filter(r => {
+        return (r.name && r.name.toLowerCase().includes(searchQuery)) ||
+               (r.phone && r.phone.includes(searchQuery)) ||
                (r.area && r.area.toLowerCase().includes(searchQuery));
       });
 
@@ -1759,11 +1317,7 @@
       if (countEl) countEl.innerText = filtered.length;
 
       if (filtered.length === 0) {
-        container.innerHTML = `
-          <div class="py-12 text-center text-slate-500 text-sm">
-            Abhi koi registration record nahi mila.
-          </div>
-        `;
+        container.innerHTML = `<div class="py-12 text-center text-slate-500 text-sm">Abhi koi registration record nahi mila.</div>`;
         return;
       }
 
@@ -1812,15 +1366,11 @@
           </div>
         `;
       }).join('');
-
       lucide.createIcons();
-    }
+    };
 
-    // Delete Runner Function for Organizer
-    function promptDeleteRunner(runnerId, runnerName) {
+    window.promptDeleteRunner = function(runnerId, runnerName) {
       if (!runnerId) return;
-
-      // In-app custom confirmation overlay
       const confirmHtml = `
         <div id="deleteConfirmDialog" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
           <div class="bg-brand-card border border-rose-500/50 w-full max-w-sm rounded-3xl p-6 text-center shadow-2xl space-y-4">
@@ -1834,59 +1384,110 @@
               </p>
             </div>
             <div class="flex gap-2">
-              <button 
-                onclick="closeDeleteConfirm()" 
-                class="w-1/2 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold transition"
-              >
-                Cancel
-              </button>
-              <button 
-                onclick="confirmDeleteRunner('${runnerId}')" 
-                class="w-1/2 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white text-xs font-bold transition shadow-lg shadow-rose-500/20"
-              >
-                Yes, Delete
-              </button>
+              <button onclick="closeDeleteConfirm()" class="w-1/2 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold transition">Cancel</button>
+              <button onclick="confirmDeleteRunner('${runnerId}')" class="w-1/2 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white text-xs font-bold transition shadow-lg">Yes, Delete</button>
             </div>
           </div>
         </div>
       `;
-
       const div = document.createElement('div');
       div.id = 'tempDeleteWrapper';
       div.innerHTML = confirmHtml;
       document.body.appendChild(div);
       lucide.createIcons();
-    }
+    };
 
-    function closeDeleteConfirm() {
+    window.closeDeleteConfirm = function() {
       const el = document.getElementById('tempDeleteWrapper');
       if (el) el.remove();
-    }
+    };
 
-    async function confirmDeleteRunner(runnerId) {
-      closeDeleteConfirm();
-      let list = getRegistrations();
-      list = list.filter(r => r.id !== runnerId);
-      await saveRegistrations(list);
+    window.showRegistrationSuccessModal = function(runner) {
+      const cfg = getEditionConfig();
+      const modalHtml = `
+        <div id="successDialog" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+          <div class="bg-brand-card border border-emerald-500/60 w-full max-w-lg rounded-3xl p-6 sm:p-8 text-center shadow-2xl relative overflow-hidden">
+            <div class="w-16 h-16 rounded-3xl bg-gradient-to-tr from-emerald-500 to-lime-400 text-black mx-auto flex items-center justify-center mb-4 shadow-xl">
+              <i data-lucide="sparkles" class="w-8 h-8 stroke-[2.5]"></i>
+            </div>
+            <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-black uppercase tracking-wider mb-2">🎉 Registration Successful!</span>
+            <h3 class="text-2xl sm:text-3xl font-black text-white font-display">Shabash, ${escapeHtml(runner.name)}!</h3>
+            <div class="my-4 bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4 text-emerald-300 text-sm leading-relaxed font-medium">
+              "Aapne apni fitness aur sehat ke liye sabse bada kadam utha liya hai! We are super proud of you!"
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-left text-xs space-y-2.5 mb-6">
+              <div class="flex justify-between items-center text-slate-300 border-b border-slate-800 pb-2">
+                <span class="text-slate-400">Run Edition:</span>
+                <span class="font-bold text-white">Aligarh Sunday Run #${escapeHtml(cfg.editionNum)} (${escapeHtml(cfg.editionTag)})</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span class="text-slate-400">Gathering Point:</span>
+                <span class="font-bold text-emerald-400">${escapeHtml(cfg.venueName)}</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span class="text-slate-400">Reporting Time:</span>
+                <span class="font-bold text-white">${escapeHtml(cfg.reportingTime)} (Warm-Up Session)</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span class="text-slate-400">Starting Time:</span>
+                <span class="font-bold text-white">${escapeHtml(cfg.startTime)} Sharp Start</span>
+              </div>
+            </div>
+            <button onclick="closeSuccessDialog()" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-lime-400 text-black font-black text-sm py-3.5 px-4 rounded-xl shadow-lg transition">
+              <i data-lucide="check" class="w-4 h-4 stroke-[3]"></i>
+              <span>Great, Sunday ${escapeHtml(cfg.reportingTime)} Milte Hain!</span>
+            </button>
+          </div>
+        </div>
+      `;
+      const div = document.createElement('div');
+      div.id = 'tempSuccessWrapper';
+      div.innerHTML = modalHtml;
+      document.body.appendChild(div);
+      lucide.createIcons();
+    };
 
-      // Refresh table, stats, and counter
-      renderRosterTable();
-      updateDashboard();
-      showToast("Runner Removed", "Runner entry ko roster se safalta purvak hata diya gaya hai.");
-    }
+    window.closeSuccessDialog = function() {
+      const el = document.getElementById('tempSuccessWrapper');
+      if (el) el.remove();
+    };
 
-    // Helper: Escape HTML string
-    function escapeHtml(string) {
-      if (!string) return '';
-      return String(string)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
+    window.openPinModal = function(action = null) {
+      pendingActionAfterPin = action;
+      const pinModal = document.getElementById('pinModal');
+      const input = document.getElementById('organizerPinInput');
+      const err = document.getElementById('pinErrorMsg');
+      if (input) input.value = '';
+      if (err) err.classList.add('hidden');
+      pinModal.classList.remove('hidden');
+      pinModal.classList.add('flex');
+      if (input) input.focus();
+    };
 
-    // Modal Drawer Toggle
-    function toggleRosterModal() {
+    window.closePinModal = function() {
+      const pinModal = document.getElementById('pinModal');
+      pinModal.classList.add('hidden');
+      pinModal.classList.remove('flex');
+      pendingActionAfterPin = null;
+    };
+
+    window.verifyOrganizerPin = function(e) {
+      e.preventDefault();
+      const entered = document.getElementById('organizerPinInput').value;
+      const err = document.getElementById('pinErrorMsg');
+      if (entered === ORGANIZER_PIN) {
+        const action = pendingActionAfterPin;
+        closePinModal();
+        toggleRosterModal();
+        if (action === 'gallery') switchOrganizerTab('photos');
+        else switchOrganizerTab('runners');
+        showToast("Organizer Access Granted", "Welcome to Admin Dashboard.");
+      } else {
+        err.classList.remove('hidden');
+      }
+    };
+
+    window.toggleRosterModal = function() {
       const modal = document.getElementById('rosterModal');
       const isHidden = modal.classList.contains('hidden');
       if (isHidden) {
@@ -1899,11 +1500,138 @@
         modal.classList.remove('flex');
       }
       lucide.createIcons();
-    }
+    };
 
-    // Custom Toast Notification (Replaces alert())
+    window.switchOrganizerTab = function(tab) {
+      const tabRunners = document.getElementById('orgTabRunners');
+      const tabPhotos = document.getElementById('orgTabPhotos');
+      const tabEdition = document.getElementById('orgTabEdition');
+      const btnRunners = document.getElementById('tabBtnRunners');
+      const btnPhotos = document.getElementById('tabBtnPhotos');
+      const btnEdition = document.getElementById('tabBtnEdition');
+
+      tabRunners.classList.add('hidden');
+      tabPhotos.classList.add('hidden');
+      if (tabEdition) tabEdition.classList.add('hidden');
+
+      const inactiveClass = 'px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 flex items-center gap-1.5 transition border border-slate-800 font-bold';
+      btnRunners.className = inactiveClass;
+      btnPhotos.className = inactiveClass;
+      if (btnEdition) btnEdition.className = inactiveClass;
+
+      const activeClass = 'px-3.5 py-2 rounded-xl bg-emerald-500 text-black flex items-center gap-1.5 transition font-bold';
+
+      if (tab === 'runners') {
+        tabRunners.classList.remove('hidden');
+        btnRunners.className = activeClass;
+      } else if (tab === 'photos') {
+        tabPhotos.classList.remove('hidden');
+        btnPhotos.className = activeClass;
+        renderOrganizerPhotos();
+      } else if (tab === 'edition') {
+        if (tabEdition) tabEdition.classList.remove('hidden');
+        if (btnEdition) btnEdition.className = activeClass;
+        applyEditionConfig();
+      }
+      lucide.createIcons();
+    };
+
+    // Gallery helpers
+    const DEFAULT_GALLERY_PHOTOS = [
+      { id: "g_1", url: "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=800&q=80", caption: "Habitat Centre Morning Gathering", date: "Sunday Run #4" },
+      { id: "g_2", url: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=800&q=80", caption: "5K Circle Stride & Warm-Up", date: "Sunday Run #3" },
+      { id: "g_3", url: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80", caption: "Fitness Energy in Aligarh", date: "Sunday Run #2" }
+    ];
+
+    window.getGalleryPhotos = function() {
+      try {
+        const stored = localStorage.getItem(GALLERY_STORAGE_KEY);
+        if (stored) return JSON.parse(stored);
+      } catch (e) {}
+      return DEFAULT_GALLERY_PHOTOS;
+    };
+
+    window.renderGallery = function() {
+      const grid = document.getElementById('galleryGrid');
+      if (!grid) return;
+      const photos = getGalleryPhotos();
+      grid.innerHTML = photos.map(photo => `
+        <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 aspect-square shadow-lg">
+          <img src="${escapeHtml(photo.url)}" alt="${escapeHtml(photo.caption || 'ARC Photo')}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3.5">
+            <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">${escapeHtml(photo.date || 'Sunday Run')}</span>
+            <p class="text-xs font-semibold text-white truncate">${escapeHtml(photo.caption || 'Sunday Run Moment')}</p>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    };
+
+    window.renderOrganizerPhotos = function() {
+      const container = document.getElementById('orgPhotosList');
+      if (!container) return;
+      const photos = getGalleryPhotos();
+      container.innerHTML = photos.map(photo => `
+        <div class="bg-slate-950 border border-slate-800 rounded-xl p-2 relative group">
+          <img src="${escapeHtml(photo.url)}" class="w-full h-24 object-cover rounded-lg mb-1.5" />
+          <p class="text-[11px] text-slate-300 truncate font-semibold">${escapeHtml(photo.caption || 'ARC Photo')}</p>
+          <button onclick="deleteGalleryPhoto('${photo.id}')" class="mt-1.5 w-full py-1 text-[10px] font-bold bg-rose-500/15 hover:bg-rose-500/30 text-rose-400 rounded-lg transition flex items-center justify-center gap-1">
+            <i data-lucide="trash-2" class="w-3 h-3"></i><span>Delete</span>
+          </button>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    };
+
+    window.handleOrganizerPhotoUpload = function() {
+      const fileInput = document.getElementById('photoFileInput');
+      const captionInput = document.getElementById('photoCaptionInput');
+      const caption = captionInput ? captionInput.value.trim() : '';
+
+      if (!fileInput.files || fileInput.files.length === 0) {
+        showToast("Photo Missing", "Kripya photo select karein.", "error");
+        return;
+      }
+
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const photos = getGalleryPhotos();
+        photos.unshift({
+          id: "photo_" + Date.now(),
+          url: e.target.result,
+          caption: caption || "Sunday 5K Run",
+          date: "Edition #5"
+        });
+        localStorage.setItem(GALLERY_STORAGE_KEY, JSON.stringify(photos));
+        fileInput.value = '';
+        if (captionInput) captionInput.value = '';
+        renderGallery();
+        renderOrganizerPhotos();
+        showToast("Photo Uploaded", "Photo gallery me jud gayi hai!");
+      };
+      reader.readAsDataURL(file);
+    };
+
+    window.deleteGalleryPhoto = function(photoId) {
+      let photos = getGalleryPhotos().filter(p => p.id !== photoId);
+      localStorage.setItem(GALLERY_STORAGE_KEY, JSON.stringify(photos));
+      renderGallery();
+      renderOrganizerPhotos();
+      showToast("Photo Deleted", "Photo gallery se hata di gayi hai.");
+    };
+
+    window.escapeHtml = function(string) {
+      if (!string) return '';
+      return String(string)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+
     let toastTimeout;
-    function showToast(title, message, type = "success") {
+    window.showToast = function(title, message, type = "success") {
       const toast = document.getElementById('toast');
       const toastTitle = document.getElementById('toast-title');
       const toastMsg = document.getElementById('toast-message');
@@ -1921,7 +1649,6 @@
       }
 
       lucide.createIcons();
-
       toast.classList.remove('translate-y-24', 'opacity-0');
       toast.classList.add('translate-y-0', 'opacity-100');
 
@@ -1930,62 +1657,16 @@
         toast.classList.add('translate-y-24', 'opacity-0');
         toast.classList.remove('translate-y-0', 'opacity-100');
       }, 4000);
-    }
+    };
 
-    // Initialize application on load
-    window.onload = function () {
+    // Start App & Firebase Listener
+    window.addEventListener('DOMContentLoaded', () => {
       document.getElementById('currentYear').innerText = new Date().getFullYear();
       applyEditionConfig();
-      memoryRunners = getRegistrations();
-      updateDashboard();
       renderGallery();
-      startRealtimeSync();
+      listenToRunners();
       lucide.createIcons();
-    };
+    });
   </script>
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyA4fECe_ETOw5Yp6rUmhq07ydRFt5ugPnI",
-  authDomain: "aligarhrunningcommunity-236a3.firebaseapp.com",
-  projectId: "aligarhrunningcommunity-236a3",
-  storageBucket: "aligarhrunningcommunity-236a3.firebasestorage.app",
-  messagingSenderId: "1034336868050",
-  appId: "1:1034336868050:web:0da76c38ca78ab2898bf0b",
-  measurementId: "G-LR351CLF91"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-
-    // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyA4fECe_ETOw5Yp6rUmhq07ydRFt5ugPnI",
-  authDomain: "aligarhrunningcommunity-236a3.firebaseapp.com",
-  projectId: "aligarhrunningcommunity-236a3",
-  storageBucket: "aligarhrunningcommunity-236a3.firebasestorage.app",
-  messagingSenderId: "1034336868050",
-  appId: "1:1034336868050:web:0da76c38ca78ab2898bf0b",
-  measurementId: "G-LR351CLF91"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 </body>
 </html>
