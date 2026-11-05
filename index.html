@@ -1943,5 +1943,27 @@
       lucide.createIcons();
     };
   </script>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA4fECe_ETOw5Yp6rUmhq07ydRFt5ugPnI",
+  authDomain: "aligarhrunningcommunity-236a3.firebaseapp.com",
+  projectId: "aligarhrunningcommunity-236a3",
+  storageBucket: "aligarhrunningcommunity-236a3.firebasestorage.app",
+  messagingSenderId: "1034336868050",
+  appId: "1:1034336868050:web:0da76c38ca78ab2898bf0b",
+  measurementId: "G-LR351CLF91"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+    
 </body>
 </html>
