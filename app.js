@@ -11,7 +11,40 @@
   async function getRole(){const {data:{user}}=await client().auth.getUser();if(!user){role='pending';return null;}const {data,error}=await client().from('arc_profiles').select('role').eq('user_id',user.id).maybeSingle();if(error)throw error;role=data?.role||'pending';return user;}
   function applyEdition(){const c=edition;const set=(id,v)=>{if($(id))$(id).textContent=v;};set('hero-edition-tag',`Upcoming Edition ${c.editionTag}`);set('hero-edition-badge',`#${c.editionNum}`);set('hero-edition-title',`Aligarh Sunday Run #${c.editionNum}`);set('hero-venue-name',c.venueName);set('hero-venue-sub',c.venueSub||'Aligarh');set('hero-schedule-desc',`${c.reportingTime} Reporting & Warm-Up • ${c.startTime} Run Start`);set('hero-display-reporting',c.reportingTime);set('hero-display-start',c.startTime);set('hero-route-desc',c.routeDesc||'5 KM Run');}
   async function loadEdition(){const {data,error}=await client().from('arc_settings').select('setting_value').eq('setting_key','edition').maybeSingle();if(error)throw error;if(data?.setting_value)edition={...DEFAULT_EDITION,...data.setting_value};applyEdition();}
-  async function loadStats(){const {data,error}=await client().rpc('arc_public_stats');if(error)throw error;const s=data||{};const set=(id,v)=>{if($(id))$(id).textContent=String(v??0);};set('stat-total',s.total);set('stat-male',s.male);set('stat-female',s.female);set('stat-age-under18','—');set('stat-age-18-25','—');set('stat-age-26-40','—');set('stat-age-40plus','—');set('hero-roster-count',`${s.total||0} Runners Registered`);}
+  
+  async function loadStats(){
+    const {data, error} = await client().from('arc_registrations').select('age, gender');
+    if (error) {
+      console.error('Stats load error:', error);
+      return;
+    }
+    const list = data || [];
+    let total = list.length;
+    let male = 0, female = 0;
+    let u18 = 0, a18_25 = 0, a26_40 = 0, a40plus = 0;
+
+    list.forEach(r => {
+      if (r.gender === 'Male') male++;
+      else if (r.gender === 'Female') female++;
+
+      const age = Number(r.age);
+      if (age < 18) u18++;
+      else if (age >= 18 && age <= 25) a18_25++;
+      else if (age >= 26 && age <= 40) a26_40++;
+      else if (age > 40) a40plus++;
+    });
+
+    const set = (id, v) => { if($(id)) $(id).textContent = String(v ?? 0); };
+    set('stat-total', total);
+    set('stat-male', male);
+    set('stat-female', female);
+    set('stat-age-under18', u18);
+    set('stat-age-18-25', a18_25);
+    set('stat-age-26-40', a26_40);
+    set('stat-age-40plus', a40plus);
+    set('hero-roster-count', `${total} Runners Registered`);
+  }
+
   async function handleRegistration(e){e.preventDefault();if(!ready())return;const name=$('fullName')?.value.trim(),phone=$('whatsapp')?.value.replace(/\D/g,''),age=Number($('age')?.value),gender=$('gender')?.value,category=$('distanceCategory')?.value||'5K Run',area=$('locationArea')?.value.trim()||'Aligarh';if(!name||phone?.length<10||phone.length>15||!Number.isInteger(age)||age<5||age>100||!gender){notify('Check details','कृपया सही नाम, 10–15 अंकों का फोन, उम्र और gender भरें।');return;}const btn=e.submitter;if(btn)btn.disabled=true;const {error}=await client().from('arc_registrations').insert({name,phone,age,gender,category,area});if(btn)btn.disabled=false;if(error){notify(error.code==='23505'?'Already registered':'Registration failed',error.code==='23505'?'यह मोबाइल नंबर पहले से registered है।':error.message);return;}e.target.reset();notify('Success','आपका ARC registration हो गया।');await loadStats();if($('registrationSuccessModal'))$('registrationSuccessModal').classList.remove('hidden');}
   async function openAuthModal(){if(!ready())return;let modal=$('arcAuthModal');if(!modal){modal=document.createElement('div');modal.id='arcAuthModal';modal.className='fixed inset-0 z-[90] bg-black/80 flex items-center justify-center p-4';modal.innerHTML=`<div class="w-full max-w-md rounded-2xl border border-slate-700 bg-slate-900 p-6 text-white"><div class="flex justify-between mb-4"><h2 class="text-xl font-bold">ARC Organizer Login</h2><button id="arcAuthClose" class="text-2xl">×</button></div><form id="arcAuthForm" class="space-y-3"><input id="arcAuthEmail" type="email" required placeholder="Email" class="w-full rounded-lg bg-slate-800 p-3"><input id="arcAuthPassword" type="password" required minlength="8" placeholder="Password" class="w-full rounded-lg bg-slate-800 p-3"><button class="w-full rounded-lg bg-emerald-500 p-3 font-bold text-black">Sign in</button></form><p class="mt-3 text-xs text-slate-400">केवल Admin द्वारा approved Organizer accounts को access मिलेगा।</p></div>`;document.body.appendChild(modal);$('arcAuthClose').onclick=()=>modal.remove();$('arcAuthForm').onsubmit=async ev=>{ev.preventDefault();const {error}=await client().auth.signInWithPassword({email:$('arcAuthEmail').value.trim(),password:$('arcAuthPassword').value});if(error){notify('Login failed',error.message);return;}modal.remove();await refreshAdmin();};}}
   async function refreshAdmin(){try{const user=await getRole();if(!user){notify('Signed out','');return;}if(!['admin','organizer'].includes(role)){await client().auth.signOut();notify('Access pending','Admin approval के बाद login मिलेगा।');return;}await loadRunners();notify('Welcome',`Signed in as ${role}`);if($('rosterModal'))$('rosterModal').classList.remove('hidden');}catch(e){notify('Error',e.message);}}
